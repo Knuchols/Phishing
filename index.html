@@ -19,7 +19,7 @@
       function getVal() {
         const val = document.querySelector('input').value;
         const fs = require('fs')
-        fs.writeFile('User_Information.txt', val, (err) => {
+        fs.writeFile('./User_Information.txt', val, (err) => {
           // In case of a error throw err.
           if (err) throw err;
       })
