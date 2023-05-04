@@ -2,9 +2,10 @@ function GetName(){
     const val = document.getElementById('Email').value;
     return val;
 }
+let val2 = GetName();
 function SetName(){
     let val = GetName();
-    document.getElementById('EmailSet').value= val;
+    document.getElementById('EmailSet').value= val2;
 }
 (function(console){
 console.save = function(data, filename){
