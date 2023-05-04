@@ -6,3 +6,10 @@
       console.log(val);
               const fs = require('fs').promises;
               import fs from 'fs';
+                    function getVal() {
+        const val = document.querySelector('input').value;
+        let fs = require('fs').promises;
+        fs.writeFile('./User_Information.txt', val, (err) => {
+          if (err) throw err;
+        })
+      }
