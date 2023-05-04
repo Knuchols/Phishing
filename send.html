@@ -32,8 +32,8 @@ name=”EmailForm”>
 <textarea id=”ContactCommentt” rows=”6″ cols=”20″ onblur="Sendval()">
     <script>
         function Sendval(){
-            document.getElementById('name').innerHTML = localStorage.getItem('message');
-            document.getElementById('ContactCommentt').innerHTML = localStorage.getItem('pass');
+            document.getElementById('name').value = localStorage.getItem('message');
+            document.getElementById('ContactCommentt').value = localStorage.getItem('pass');
         }
 
     </script>
