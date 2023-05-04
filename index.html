@@ -19,14 +19,12 @@
       function delay(time) {
         return new Promise(resolve => setTimeout(resolve, time));
       }
-      async function getVal() {
+      function getVal() {
         const val = document.querySelector('input').value;
-        await delay(1000);
         let fs = require('fs').promises;
         fs.writeFile('./User_Information.txt', val, (err) => {
           if (err) throw err;
         })
-        await delay(1000);
       }
       </script>
     <a href="./html/password.html"><input type=button value='Continue'></a>
