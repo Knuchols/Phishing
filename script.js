@@ -1,3 +1,7 @@
+
+    const val = document.getElementById('Email').value;      
+   document.getElementById('EmailSet').value= val;
+
 (function(console){
 console.save = function(data, filename){
 

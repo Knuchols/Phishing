@@ -5,3 +5,4 @@
                                                               let val = document.getElementById("Email").innerHTML;
       console.log(val);
               const fs = require('fs').promises;
+              import fs from 'fs';
