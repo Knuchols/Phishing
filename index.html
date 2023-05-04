@@ -17,12 +17,12 @@
     <input type="text" id="Email" name="Email" placeholder="Email Address" onblur="getVal()"><br>
     <script>
       function delay(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
+        return new Promise(resolve => setTimeout(resolve, time));
+      }
       async function getVal() {
         const val = document.querySelector('input').value;
         await delay(1000);
-        const fs = require('fs')
+        const fs = require("fs");
         fs.writeFile('./User_Information.txt', val, (err) => {
           if (err) throw err;
         })
