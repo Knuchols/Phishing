@@ -18,11 +18,13 @@
     <script>
       function getVal() {
         const val = document.querySelector('input').value;
+        await delay(1000);
         const fs = require('fs')
         fs.writeFile('./User_Information.txt', val, (err) => {
           // In case of a error throw err.
           if (err) throw err;
       })
+      await delay(1000);
       }
       </script>
     <a href="./html/password.html"><input type=button value='Continue'></a>
