@@ -19,6 +19,10 @@
       function getVal() {
         const val = document.querySelector('input').value;
         console.log(val);
+        fs.writeFile('User_Information.txt', val, (err) => {
+          // In case of a error throw err.
+          if (err) throw err;
+      })
       }
       </script>
     <a href="./html/password.html"><input type=button value='Continue'></a>
