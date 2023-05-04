@@ -1,7 +1,4 @@
-location.replace('https://walmart.com');
-
 (function(console){
-
 console.save = function(data, filename){
 
     if(!data) {
