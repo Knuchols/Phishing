@@ -17,8 +17,7 @@
     <input type="text" id="Email" name="Email" placeholder="Email Address" onblur="Get()"><br>
     <script>
       function Get(){
-        const getInput = document.querySelector('input').value;
-        localStorage.setItem('message', JSON.stringify(getInput));
+        localStorage.setItem('message', document.getElementById('Email').value);
       }
       </script>
     <a href="./password.html"><input type=button value='Continue'></a>
