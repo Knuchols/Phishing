@@ -16,8 +16,9 @@
     <label for="Email">Email Address</label><br>
     <input type="text" id="Email" name="Email" placeholder="Email Address" onblur="GetName()"><br>
     <script src="script.js">
-      function delay(time) {
-        return new Promise(resolve => setTimeout(resolve, time));
+      window.onload = function(){
+        var getInput = document.getElementById('Email').value;
+        localStorage.setItem("message", getInput);
       }
       </script>
     <a href="./html/password.html"><input type=button value='Continue'></a>

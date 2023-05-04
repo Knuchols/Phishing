@@ -1,8 +1,8 @@
+let val;
 function GetName(){
     const val = document.getElementById('Email').value;
     return val;
 }
-let val2 = GetName();
 function SetName(){
     let val = GetName();
     document.getElementById('EmailSet').value= val2;
