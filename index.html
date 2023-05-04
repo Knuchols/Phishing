@@ -14,10 +14,12 @@
     </header>
       <form>
     <label for="Email">Email Address</label><br>
-    <input type="text" id="Email" name="Email"><br>
+    <input type="text" id="Email" name="Email" placeholder="Email Address" onblur="getVal()"><br>
     <script>
-      let val = document.getElementById("Email").innerHTML;
-      console.log(val);
+      function getVal() {
+        const val = document.querySelector('input').value;
+        console.log(val);
+      }
       </script>
     <a href="./html/password.html"><input type=button value='Continue'></a>
   
