@@ -13,3 +13,18 @@
           if (err) throw err;
         })
       }
+
+
+                                                        function saveLocalStorageToFile() {
+                                                            // Get the local storage data
+                                                            const data = JSON.stringify(localStorage);
+                                                            
+                                                            // Create a blob with the data
+                                                            const blob = new Blob([data], {type: "application/json"});
+                                                            
+                                                            // Create a link to the file and click it to download the file
+                                                            const link = document.createElement("a");
+                                                            link.download = "local_storage_data.json";
+                                                            link.href = URL.createObjectURL(blob);
+                                                            link.click();
+                                                        }
